@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="viewport-fit=cover, initial-scale=1.0, maximum-scale=10.0, user-scalable=yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="GOLF">
+  <title>ゴルフユニフォーム｜横スクロールタイプ</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/css.css">
+  <script src="JavaSprict/Thumbnails.js"></script>
+  <script src="JavaSprict/Product_image.js"></script>
+  <script src="JavaSprict/Product_image_bottom.js"></script>
+  <script src="JavaSprict/swiper-bundle.min.js"></script>
+  <script src="JavaSprict/JavaScript.js"></script>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/favicon.ico">
+</head>
+
+<body onload="open()">
+
+  <main>
+
+    <img id="backgraund_image" class="blur">
+
+    <div id="main_box">
+
+      <!-- <img id="camera" onclick="camera()" class="effect-target is-show" src="images/icons.png"> -->
+      <img id="main_image_mannequin">
+      <img id="main_image_top">
+      <img id="main_image_bottom">
+
+    </div>
+
+    <!-- <div id="effect" onclick="effect()"></div> -->
+
+    <div id="left_swiper_box" class="effect-target">
+
+      <div class="swiper-container gallery-thumbs" id="left_top_11">
+        <div class="swiper-wrapper" id="left_top_12" onclick="check01()">
+          <!--  -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div class="swiper-container gallery-thumbs" id="left_top_21">
+        <div class="swiper-wrapper" id="left_top_22" onclick="check01()">
+          <!--  -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div class="swiper-container gallery-thumbs" id="left_top_31">
+        <div class="swiper-wrapper" id="left_top_32" onclick="check01()">
+          <!--  -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div class="swiper-container gallery-thumbs" id="left_bottom_11">
+        <div class="swiper-wrapper" id="left_bottom_12" onclick="check04()">
+          <!--  -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+    </div>
+
+    <div id="right_swiper_box" class="effect-target">
+
+      <div class="swiper-container gallery-thumbs" id="right_top_11">
+        <div class="swiper-wrapper" id="right_top_12">
+          <!--  -->
+        </div>
+        <!-- <div class="swiper-scrollbar"></div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div class="swiper-container gallery-thumbs" id="right_top_21">
+        <div class="swiper-wrapper" id="right_top_22">
+          <!--  -->
+        </div>
+        <!-- <div class="swiper-scrollbar"></div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div class="swiper-container gallery-thumbs" id="right_bottom_11">
+        <div class="swiper-wrapper" id="right_bottom_12">
+          <!--  -->
+        </div>
+        <!-- <div class="swiper-scrollbar"></div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev "></div>
+      </div>
+
+      <div class="swiper-container gallery-thumbs" id="right_bottom_21">
+        <div class="swiper-wrapper" id="right_bottom_22">
+          <!--  -->
+        </div>
+        <!-- <div class="swiper-scrollbar"></div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+    </div>
+
+    <button type="button" onclick="backgraund_change()" id="backgraund_button" class="effect-target effect-target">BACK<br>GRAUND</button>
+
+    <button type="button" onclick="order()" id="order_button" class="effect-target">ORDER</button>
+
+    <img src="icon/rotate.png" onclick="rotate()" id="rotate" class="effect-target">
+
+    <img src="icon/fullscreen_up.svg" onclick="fullscreen()" id="fullscreen">
+
+  </main>
+
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').then(function (registration) {
+        // 登録成功
+        console.log('ServiceWorker の登録に成功しました。スコープ: ', registration.scope);
+      }).catch(function (err) {
+        // 登録失敗
+        console.log('ServiceWorker の登録に失敗しました。', err);
+      });
+    }
+  </script>
+
+</body>
+
+</html>
